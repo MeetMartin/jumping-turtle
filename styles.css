@@ -1,0 +1,44 @@
+.Turtle {
+    position: absolute;
+    top: 250px;
+    left: 50px;
+}
+
+.obstacle {
+    position: absolute;
+    width: 60px;
+    top: 290px;
+}
+
+#alert {
+    position: relative;
+    top: 150px;
+    color: #fff;
+}
+
+@keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0%;
+    }
+}
+
+@-webkit-keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0%;
+    }
+}
+
+#GameBackground {
+    background-image: url(images/background.png);
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear;
+    -webkit-animation: slideright 600s infinite linear;
+    width: 100%;
+    height: 400px;
+}
